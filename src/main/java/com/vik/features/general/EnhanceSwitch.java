@@ -45,6 +45,16 @@ public class EnhanceSwitch {
         return result;
     }
 
+    //null in switch
+    void m(){
+        String s = null;
+        switch (s) {
+            case null -> System.out.println("null case");
+            case "A" -> System.out.println("A case");
+            default -> System.out.println("default case");
+        }
+    }
+
     public static String newSwitchMultiCase(int value){
         String result = switch (value) {
             case 1, 2, 3 -> "Small";
